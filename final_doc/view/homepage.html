@@ -1,0 +1,97 @@
+<hr />
+<div id="titulohome">
+  <h1>Bienvenido al Home Page</h1>
+</div>
+
+<div style="display: flex; justify-content: center">
+  <img id="ban" src="img/1.jpg" />
+  <img id="ban" src="img/2.jpg" />
+  <img id="ban" src="img/3.jpg" />
+  <img id="ban" src="img/4.png" />
+  <img id="ban" src="img/5.png" />
+</div>
+<br />
+<div class="texto">
+  Las redes sociales, en el mundo virtual, son sitios y aplicaciones que operan
+  en niveles diverso, como son, el profesional, de relación, entre otros; pero
+  siempre permitiendo el intercambio de información entre personas y/o empresas.
+  <br />
+  <br />
+  El uso de redes sociales ha sido absorbido por personas en todo el mundo y hoy
+  ya es parte de la rutina. Esto hizo de esos espacios un lugar donde las marcas
+  y empresas también quisieran estar para interactuar con sus prospectos y
+  clientes, trayendo posibilidades muy positivas.
+  <br />
+  <br />
+  Tres de las redes sociales actuales en tendencia son:
+</div>
+<hr />
+
+<ul class="nav nav-tabs" style="{{centrar.card}}">
+  <li class="nav-item">
+    <a class="nav-link active" href ng-click="Mostrar(1)">Instagram</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href ng-click="Mostrar(2)">Facebook</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href ng-click="Mostrar(3)">TikTok</a>
+  </li>
+</ul>
+
+<div style="{{centrar.estiloss}}">
+  <div
+    class="card"
+    style="width: 18rem; margin-top: 20px; text-align: center"
+    ng-show="front"
+  >
+    <img
+      style="height: 280px"
+      src="img/ig.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Instagram</h5>
+      <p class="card-text">Creado por Kevin Systrom, Mike Krieger.</p>
+    </div>
+  </div>
+
+  <div
+    class="card"
+    style="width: 18rem; margin-top: 20px; text-align: center"
+    ng-show="back"
+  >
+    <img
+      style="height: 280px"
+      src="img/fb.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Facebook</h5>
+      <p class="card-text">
+        Creado y fundado por Mark Zuckerberg, Eduardo Saverin, Andrew McCollum,
+        Dustin Moskovitz, Chris Hughes.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="card"
+    style="width: 18rem; margin-top: 20px; text-align: center"
+    ng-show="full"
+  >
+    <img
+      style="height: 280px"
+      src="img/tt.jpg"
+      class="card-img-top"
+      alt="..."
+    />
+    <div class="card-body">
+      <h5 class="card-title">Tiktok</h5>
+      <p class="card-text">Creado por ByteDance.</p>
+    </div>
+  </div>
+</div>
+<hr />

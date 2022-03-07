@@ -1,0 +1,80 @@
+<hr />
+<div class="contenedorform">
+  <br />
+  <h1 style="color: #2d3436; text-align: center">Formulario</h1>
+  <form method="POST" ng-submit="Guardar()">
+    <div class="mb-3">
+      <label>Nombre: </label>
+      <input
+        id="input"
+        type="text"
+        ng-model="nombre"
+        class="form-control"
+        placeholder="Introduzca su nombres aca..."
+      />
+    </div>
+    <hr />
+
+    <div class="mb-3">
+      <label>Apellido: </label>
+      <input
+        id="input"
+        type="text"
+        ng-model="apellido"
+        class="form-control"
+        placeholder="Introduzca sus apellidos aca..."
+      />
+    </div>
+
+    <hr />
+
+    <div class="mb-3">
+      <label>Fecha de nacimiento: </label>
+      <input id="input" type="date" ng-model="fecha" class="form-control" />
+    </div>
+    <hr />
+
+    <div class="mb-3">
+      <label>Género: </label>
+      <br />
+      <div class="custom-control custom-radio custom-control-inline">
+        <label for="femenino"> Femenino </label>
+        <input
+          id="input"
+          id="femenino"
+          type="radio"
+          class="form-check-input"
+          ng-model="genero"
+          value="femenino"
+        />
+      </div>
+      <br />
+      <div class="custom-control custom-radio custom-control-inline">
+        <label for="masculino"> Masculino </label>
+        <input
+          id="input"
+          id="masculino"
+          type="radio"
+          class="form-check-input"
+          ng-model="genero"
+          value="masculino"
+        />
+      </div>
+    </div>
+    <hr />
+    <div class="mb-3">
+      <label>Email: </label>
+      <input
+        id="input"
+        type="email"
+        ng-model="email"
+        class="form-control"
+        placeholder="Introduzca su email aca..."
+      />
+    </div>
+    <hr />
+    <input id="boton" type="submit" value="Enviar informacion" />
+  </form>
+  <br />
+</div>
+<hr />
